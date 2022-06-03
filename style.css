@@ -17,7 +17,7 @@ body{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin: 0 auto ;
+    margin: 0 auto;
 }
 
 
@@ -27,9 +27,7 @@ body{
     display: none;
 }
 
-.logo{
-    max-width: 300px;
-}
+
 
 .nav_link_container{
     display: flex;
@@ -49,11 +47,6 @@ body{
     font-size: 2.5vmin;
     font-weight: bold;
 }
-
-/* .mobileNav{
-    transform: translateY(0vh);
-    transition: 1.2s ease-in-out;
-} */
 
 section{
     min-width: 100vw;
@@ -99,6 +92,7 @@ h2{
     background-color: whitesmoke;
 }
 
+
 .btn{
     border: 3px solid whitesmoke;
     border-radius: 10px;
@@ -109,6 +103,7 @@ h2{
     color: whitesmoke;
     font-size: 2vmin;
     margin: 0 0.5vmin;
+    cursor: pointer;
 }
 
 .btn:hover{
@@ -187,15 +182,25 @@ h2{
   }
 
   @media screen and (max-width: 768px) {
-      .navbar{
-          flex-direction: column;
-          max-height: 100vh;
-      }
+    .navbar{
+        flex-direction: column;
+        max-height: 100vh;
+        max-width: 100vw;
+        margin: 20px 0;
+        background: #a323b3;
+        justify-content: space-between;
+        transform: translateY(-100vh);
+        -webkit-border-bottom-right-radius: 100px;
+        -moz-border-radius-bottomright: 100px;
+        border-bottom-right-radius: 100px;
+    }
 
       .nav_link_container{
         flex-direction: column;
         margin: 0;
         padding: 0;
+        justify-content: center;
+        height: 90vh;
     }
     
     .nav_link_container li{
@@ -205,16 +210,35 @@ h2{
         font-size: 20px;
     }
 
-    .logo{
-        margin: auto;
-    }
-
+   .logo{
+       position: absolute;
+       top: 0;left: 0;
+       margin: 10px;
+   }
     #navBtn{
         display: block;
         position: absolute;
         right: 0;
         z-index: 100;
-        margin: 25px;
+        margin: 40px;
     }
+    
+
+    #crossBtn{
+        position: absolute;
+        right: 0;
+        z-index: 200;
+        margin: 40px;
+    }
+    .closeNavbar{
+        transform : translateY(-100vh);
+        transition: 1.2s all ease-in-out;
+    }
+    .responsive_navbar{
+        transform : translateY(0vh) !important;
+        transition: 1.2s all ease-in-out;
+    }
+
+
     
 }
