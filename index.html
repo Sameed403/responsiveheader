@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+            <img src="https://cdn.shopify.com/s/files/1/2695/9506/files/new-redragon-logo_180x.png?v=1516241882" alt="Logo" class="logo">
+
+            <ul class="nav_link_container">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+    </nav>
+
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAhElEQVRIS2NkoDFgpLH5DPS14M/v3+v///8fgM1XjIyMa1hYWUNBcsSqA6lF8cHvX7/+4wsyVjY2sHpi1eG0AGYQzDKYgegWEFI3agED2UGEK6IpjmRikx+x6jAimRa5ejQnYw1V5NSFtagglPzQczauHD+ak0dzMnXyNX1zMnXcjGoKAOz14Bn79atOAAAAAElFTkSuQmCC" id="navBtn"/>
+
+    <!-- Header -->
+    <section>
+        <div class="container">
+            <div class="header_content">
+                <h2>Redragon Walking Dead</h2>
+                <div class="line"></div>
+                <button class="btn">Contact</button>
+                <button class="btn">Shop</button>
+            </div>
+            
+            <div class="bubbles">
+                <img src="bubble.png" alt="bubble">
+                <img src="bubble.png" alt="bubble">
+                <img src="bubble.png" alt="bubble">
+                <img src="bubble.png" alt="bubble">
+                <img src="bubble.png" alt="bubble">
+                <img src="bubble.png" alt="bubble">
+                <img src="bubble.png" alt="bubble">
+            </div>
+        </div>
+    </section>
+
+    <!-- JQUERY CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function () {
+            $("#navBtn").click(() => {
+                $("#navbar").toggle()
+        });
+    })
+    </script>
+</body>
+</html>
