@@ -2,6 +2,7 @@ body{
     overflow-x: hidden;
     padding: 0;
     margin: 0;
+    scroll-behavior: smooth;
 }
 
 .navbar{
@@ -102,7 +103,7 @@ h2{
     background-color: transparent;
     color: whitesmoke;
     font-size: 2vmin;
-    margin: 0 0.5vmin;
+    margin: 0 5vmin;
     cursor: pointer;
 }
 
@@ -166,10 +167,11 @@ h2{
 }
 .bubbles img:nth-child(6){
     animation-delay: 2.5s;
-    max-width: 6vmax;
+    max-width: 2.9vmax;
 }
 .bubbles img:nth-child(7){
     animation-delay: 4.2s;
+    max-width: 4vmax;
 }
 
 @media screen and (max-width: 1092px) {
@@ -229,14 +231,15 @@ h2{
         right: 0;
         z-index: 200;
         margin: 40px;
+        cursor: pointer;
     }
     .closeNavbar{
         transform : translateY(-100vh);
-        transition: 1.2s all ease-in-out;
+        transition: 1s all ease-in-out;
     }
     .responsive_navbar{
         transform : translateY(0vh) !important;
-        transition: 1.2s all ease-in-out;
+        transition: 1s all ease-in-out;
     }
 
 
